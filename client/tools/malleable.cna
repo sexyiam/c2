@@ -1,0 +1,17 @@
+set useragent "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0)"
+set Host "127.0.0.1"
+
+http-get {
+    uri "/updates/check"
+    header "Accept" "application/json"
+    block parameter "id"
+    block base64
+}
+
+http-post {
+    uri "/updates/submit"
+    header "Accept" "application/json"
+    block parameter "data"
+    block base64url
+    block append "&v=1"
+}
