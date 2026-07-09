@@ -1,0 +1,28 @@
+1 VERSIONINFO
+FILEVERSION     10,0,19041,1
+PRODUCTVERSION  10,0,19041,1
+FILEFLAGSMASK   0x3fL
+FILEFLAGS       0x0L
+FILEOS          0x40004L
+FILETYPE        0x2L
+FILESUBTYPE     0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Microsoft Corporation"
+            VALUE "FileDescription",  "Runtime Broker"
+            VALUE "FileVersion",      "10.0.19041.1"
+            VALUE "InternalName",     "RuntimeBroker"
+            VALUE "LegalCopyright",   "\251 Microsoft Corporation. All rights reserved."
+            VALUE "OriginalFilename", "RuntimeBroker.exe"
+            VALUE "ProductName",      "Microsoft Windows Operating System"
+            VALUE "ProductVersion",   "10.0.19041.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
