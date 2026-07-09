@@ -125,3 +125,10 @@ Exit `2` means Defender CLI isn’t available, not “clean.”
 ## License
 
 Educational and authorized testing only. No warranty.
+
+
+![Operator console](assets/console-banner.png)
+
+![Agent session](assets/console-session.png)
+
+![Task results](assets/console-results.png)
