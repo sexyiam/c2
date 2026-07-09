@@ -1,0 +1,18 @@
+# TLS on :443 → teamserver on host 127.0.0.1:8443 (plain HTTP).
+#
+# From repo root:
+#   docker compose -f infra/docker-compose.yml up -d
+# Point the implant redirector profile at host:443 (see infra/README.md).
+
+services:
+  redirector:
+    image: caddy:2-alpine
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./certs:/certs:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
